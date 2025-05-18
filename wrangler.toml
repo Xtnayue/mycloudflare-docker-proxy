@@ -1,5 +1,5 @@
 name = "cloudflare-docker-proxy"
-compatibility_date = "2023-12-01"
+compatibility_date = "2025-5-21"
 
 [dev]
 ip = "0.0.0.0"
@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "repo.vhqihh.fyi"
 
 [env.dev.vars]
 MODE = "debug"
@@ -17,13 +17,13 @@ CUSTOM_DOMAIN = "repo.vhqihh.fyi"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.libcuda.so", custom_domain = true },
-  { pattern = "quay.libcuda.so", custom_domain = true },
-  { pattern = "gcr.libcuda.so", custom_domain = true },
-  { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-  { pattern = "k8s.libcuda.so", custom_domain = true },
-  { pattern = "ghcr.libcuda.so", custom_domain = true },
-  { pattern = "cloudsmith.libcuda.so", custom_domain = true },
+  { pattern = "docker.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "quay.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "gcr.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "k8s-gcr.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "k8s.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "ghcr.repo.vhqihh.fyi", custom_domain = true },
+  { pattern = "cloudsmith.repo.vhqihh.fyi", custom_domain = true },
 ]
 
 [env.production.vars]
